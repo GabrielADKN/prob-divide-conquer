@@ -1,4 +1,4 @@
-const sortedFrequency = require("./sorted-frequency")
+import sortedFrequency from "./sorted-frequency.js"
 
 describe("#sortedFrequency", function(){
   it("returns the frequency", function(){

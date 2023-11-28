@@ -1,4 +1,4 @@
-const findRotatedIndex = require("./find-rotated-index")
+import findRotatedIndex from "./find-rotated-index.js";
 
 describe("#findRotatedIndex", function(){
   it("returns the correct index", function(){

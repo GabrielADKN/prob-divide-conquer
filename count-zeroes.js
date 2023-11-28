@@ -1,19 +1,21 @@
-function countZeroes(arr) {
-    let start = 0;
-    let end = arr.length-1;
-    let mid = Math.floor((start+end)/2);
-    while(start <= end) {
-        if(arr[mid] === 0) {
-            if(arr[mid-1] === 0) {
-                end = mid-1;
-            } else {
-                return arr.length-mid;
-            }
-        } else {
-            start = mid+1;
-        }
-        mid = Math.floor((start+end)/2);
-    }
-}
+export default function countZeroes(arr) {
+    if (arr[0] === 0) return arr.length;
 
-module.exports = countZeroes
+    let start = 0;
+    let end = arr.length - 1;
+
+    while (start <= end) {
+        let mid = Math.floor((start + end) / 2);
+
+        if (arr[mid] === 1) {
+            start = mid + 1;
+        } else {
+            if (mid === 0 || arr[mid - 1] !== 0) {
+                return arr.length - mid;
+            } else {
+                end = mid - 1;
+            }
+        }
+    }
+    return 0;
+}

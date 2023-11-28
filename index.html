@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/jasmine-core/lib/jasmine-core/jasmine.css"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <link
-      rel="stylesheet"
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine.css"
     />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="jasmine"></div>
+
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine.js"
@@ -28,6 +27,17 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/boot.js"
     ></script>
 
-    <script src=""></script>
+    <script type="module" src="count-zeroes.js"></script>
+    <script type="module" src="find-floor.js"></script>
+    <script type="module" src="find-rotated-index.js"></script>
+    <script type="module" src="find-rotation-count.js"></script>
+    <script type="module" src="sorted-frequency.js"></script>
+
+    <script type="module" src="count-zeroes.test.js"></script>
+    <script type="module" src="find-floor.test.js"></script>
+    <script type="module" src="find-rotated-index.test.js"></script>
+    <script type="module" src="find-rotation-count.test.js"></script>
+    <script type="module" src="sorted-frequency.test.js"></script>
+
   </body>
 </html>

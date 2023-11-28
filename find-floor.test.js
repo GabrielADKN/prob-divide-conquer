@@ -1,4 +1,4 @@
-const findFloor = require("./find-floor")
+import findFloor from "./find-floor.js";
 
 describe("#findFloor", function(){
   it("returns the floor or -1", function(){

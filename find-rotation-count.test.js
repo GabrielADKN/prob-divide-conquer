@@ -1,4 +1,4 @@
-const findRotationCount = require("./find-rotation-count")
+import findRotationCount from "./find-rotation-count.js"
 
 describe("#findRotationCount", function () {
   it("returns the number of rotations", function () {
